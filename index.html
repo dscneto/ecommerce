@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Loja</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtros">
+            <h2>Filtros</h2>
+            <label for="filtro-preco">Preço:</label>
+            <select id="filtro-preco">
+                <option value="0">Todos</option>
+                <option value="1">Até R$ 50,00</option>
+                <option value="2">De R$ 50,00 a R$ 100,00</option>
+                <option value="3">Acima de R$ 100,00</option>
+            </select>
+            <button onclick="filtrarProdutos()">Filtrar</button>
+        </section>
+        <section class="produtos">
+            <h2>Produtos</h2>
+            <div class="lista-produtos">
+                <!-- Os produtos serão exibidos aqui -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
